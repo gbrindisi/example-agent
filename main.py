@@ -1,34 +1,4 @@
-# 🧠 Problem Statement
-# You're working with a digital marketing agency to build a multi-agent AI team that can:
-# 1. Understand a client’s domain and project
-# 2. Research the market and competitors
-# 3. Build a marketing strategy
-# 4. Come up with campaign ideas
-# 5. Write compelling ad copy
-# 6. Review the entire output
-
-# Setting the Context
-# First, as a user input, set the client's domain (URL) and project description:
-
-domain = "crewai.com"
-project = (
-    "CrewAI, a leading provider of multi-agent systems, aims to revolutionize marketing "
-    "automation for its enterprise clients. This project involves developing an innovative "
-    "marketing strategy to showcase CrewAI's advanced AI-driven solutions, emphasizing ease of "
-    "use, scalability, and integration capabilities. The campaign will target tech-savvy decision-"
-    "makers in medium to large enterprises, highlighting success stories and the transformative "
-    "potential of CrewAI's platform."
-)
-
-# Installing Dependencies
-# Install required libraries with:
-# pip install -r requirements.txt
-
-import warnings
-warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
-
 from dotenv import load_dotenv
-import os
 
 if load_dotenv():
     print("Success: .env file found with some environment variables")
